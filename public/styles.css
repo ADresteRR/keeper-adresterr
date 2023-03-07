@@ -5,10 +5,16 @@
   }
   html {
     font-family: "Montserrat", sans-serif;
+    /* min-height: 100vh; */
+  }
+  #root {
+    min-height: 100vh;
+    position: relative;
   }
   body {
     background: #eee;
     padding: 0 16px;
+    /* position: relative; */
   }
   
   header {
