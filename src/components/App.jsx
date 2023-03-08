@@ -9,6 +9,9 @@ function App() {
     const addNote = (newNote) => {
         setNotes([...notes, newNote]);
     }
+    const deleteNote = (id) => {
+        setNotes(() => notes.filter((note, index) => index !== id));
+    }
     return (
         <>
             <Header />
@@ -19,6 +22,7 @@ function App() {
                     id={index}
                     title={note.title}
                     content={note.content}
+                    deleteNote={deleteNote}
                 />
             })}
             <Footer />
